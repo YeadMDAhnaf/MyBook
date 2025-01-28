@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "534604938423",
+    "project_id": "my-book-cd610",
+    "storage_bucket": "my-book-cd610.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534604938423:android:0f1c752729d6a77b126132",
+        "android_client_info": {
+          "package_name": "com.yead.mybook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQlRDs6mnh3305SIgeAEbU1yfyCn-WpZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

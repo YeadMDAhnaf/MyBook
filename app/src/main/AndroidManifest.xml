@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyBook"
+        tools:targetApi="31">
+        <activity
+            android:name=".Notification"
+            android:exported="false" />
+        <activity
+            android:name=".buni"
+            android:exported="false" />
+        <activity
+            android:name=".SearchMessage"
+            android:exported="false" />
+        <activity
+            android:name=".Message"
+            android:exported="false" />
+        <activity
+            android:name=".MessageAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".ChatBox"
+            android:exported="false" />
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ssearch"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TransactionHistory"
+            android:exported="false" />
+        <activity
+            android:name=".PdfViewerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerifyTransaction"
+            android:exported="false" />
+        <activity
+            android:name=".finalTransaction"
+            android:exported="false" />
+        <activity
+            android:name=".TransactionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Try1"
+            android:exported="false" />
+        <activity
+            android:name=".NewHome"
+            android:exported="false"
+            android:label="@string/title_activity_new_home"
+            android:theme="@style/Theme.MyBook.NoActionBar" />
+        <activity
+            android:name=".searchpdf"
+            android:exported="false" />
+        <activity
+            android:name=".AddPdf"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mybooklist"
+            android:exported="false" />
+        <activity
+            android:name=".ProductDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".myacc"
+            android:exported="false" />
+        <activity
+            android:name=".settings"
+            android:exported="false" />
+        <activity
+            android:name=".AdminCatagory"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAddNewProduct"
+            android:exported="false" />
+        <activity
+            android:name=".Start"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".newacc"
+            android:exported="false" />
+        <activity
+            android:name=".loginpage"
+            android:exported="false" />
+    </application>
+
+</manifest>

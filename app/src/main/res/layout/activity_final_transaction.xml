@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".finalTransaction"
+    android:background="@drawable/back1">
+
+    <!-- Logo at the top -->
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/logoo" />
+
+    <!-- Cash slip section -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cash_slip_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/logo_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/back2"
+           >
+
+            <!-- Product Image -->
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="60dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                />
+
+            <!-- Product Name -->
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Product Name"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Product's Bkash Number -->
+            <TextView
+                android:id="@+id/product_bkash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Product Bkash: 0"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_gravity="center" />
+
+            <!-- User's Bkash Number -->
+            <TextView
+                android:id="@+id/user_bkash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Your Bkash: 0"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_gravity="center" />
+
+            <!-- Paid Amount -->
+            <!-- Paid Amount -->
+            <TextView
+                android:id="@+id/paid_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:text="Paid Amount: $0"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                 />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Return to Home Button -->
+    <Button
+        android:id="@+id/return_home_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#9a9db2"
+        android:text="Return to Home"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/cash_slip_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAddNewProduct"
+    android:background="@drawable/back1">
+
+    <!-- ImageView for product image -->
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:src="@drawable/baseline_add_photo_alternate_24" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Click the image to upload Picture"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="bold"/>
+
+    <!-- EditText for product name -->
+    <EditText
+        android:id="@+id/productname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#9a9db2"
+        android:drawableLeft="@drawable/baseline_menu_book_24"
+        android:hint="Book Name"
+        android:inputType="textMultiLine"
+        android:padding="14dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
+
+    <!-- EditText for product description -->
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productname"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#9a9db2"
+        android:hint="Seller's Number and Address"
+        android:drawableLeft="@drawable/baseline_description_24"
+        android:inputType="textMultiLine"
+        android:padding="14dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
+
+    <!-- EditText for product price -->
+    <EditText
+        android:id="@+id/Price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#9a9db2"
+        android:hint="Book Price"
+        android:drawableLeft="@drawable/baseline_price_check_24"
+        android:inputType="text"
+        android:padding="14dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
+
+    <!-- Button to add the product -->
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Price"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="45dp"
+        android:backgroundTint="#9a9db2"
+        android:drawableLeft="@drawable/baseline_add_24"
+        android:padding="17dp"
+        android:text="Add Book"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <!-- Button to add PDF file -->
+    <Button
+        android:id="@+id/addPDF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Add"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="45dp"
+        android:background="@android:color/transparent"
+        android:text="Add PDF File"
+        android:textColor="#000000" />
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Try1"
+    android:background="#9a9db2">
+
+
+    <!-- Profile Image on the Left -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="46dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/profile" />
+
+    <!-- Centered Search Bar -->
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/profile_image"
+        android:background="@drawable/rounded"
+        android:drawableLeft="@drawable/baseline_search_24"
+        android:hint="Search For Books"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <!-- RecyclerView for displaying content -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/search_bar"
+        android:layout_above="@id/bar"
+        android:background="@drawable/back1" />
+
+    <!-- Bottom Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_nav_background"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:src="@drawable/logout" />
+
+        <ImageView
+            android:id="@+id/booklist"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:src="@drawable/baseline_menu_book_24" />
+        <ImageView
+            android:id="@+id/message"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:src="@drawable/baseline_message_24" />
+
+        <ImageView
+            android:id="@+id/upload"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:src="@drawable/baseline_upload_24" />
+
+        <ImageView
+            android:id="@+id/searchpdf"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:src="@drawable/baseline_picture_as_pdf_24" />
+
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:src="@drawable/settings" />
+    </LinearLayout>
+
+</RelativeLayout>

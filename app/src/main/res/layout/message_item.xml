@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Timestamp for the own message (aligns left) -->
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:layout_gravity="start" />
+
+    <!-- Message text for own message (aligns right) -->
+    <TextView
+        android:id="@+id/messageText"
+        android:layout_width="wrap_content"
+        android:textAlignment="viewEnd"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_gravity="end" />
+
+    <!-- Timestamp for the other user's message (aligns right) -->
+    <TextView
+        android:id="@+id/timestamp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:layout_gravity="end" />
+
+    <!-- Message text for other user's message (aligns left) -->
+    <TextView
+        android:id="@+id/messageText2"
+        android:layout_width="wrap_content"
+        android:textAlignment="viewStart"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_gravity="start" />
+</LinearLayout>
